@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
+import CustomLink from "./components/CustomLink";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,16 +14,20 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body className={inter.className}>
                 {/* =====================nav======================== */}
-                <nav className="bg-blue-500 p-5">
+                <nav className="bg-gray-500 p-5">
                     <ul className="flex space-x-5">
                         <li>
-                            <Link href="/">Home</Link>
+                            <CustomLink path="/">Home</CustomLink>
                         </li>
                         <li>
-                            <Link href="/dasboard/settings">setting</Link>
+                            <CustomLink path="/dasboard/settings">
+                                setting
+                            </CustomLink>
                         </li>
                         <li>
-                            <Link href="/dasboard/analytics">analytics</Link>
+                            <CustomLink path="/dasboard/analytics">
+                                analytics
+                            </CustomLink>
                         </li>
                     </ul>
                 </nav>

@@ -6,8 +6,8 @@ export const metadata = {
 };
 const page = () => {
     return (
-        <div className="bg-red-400 p-10">
-            <h1>Analytics page</h1>
+        <div className="bg-red-700 p-10 w-3/4 mx-auto mt-10">
+            <h1 className="text-4xl text-center">Analytics page</h1>
             <p className="pt-10 ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Pariatur esse dolor iusto debitis assumenda ratione! Aperiam
