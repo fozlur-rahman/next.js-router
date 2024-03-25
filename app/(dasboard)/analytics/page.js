@@ -1,3 +1,4 @@
+import SortProducts from "@/app/components/SortProducts";
 import React from "react";
 
 export const metadata = {
@@ -14,6 +15,7 @@ const page = () => {
                 laborum pariatur, eligendi veritatis sunt facilis molestiae
                 tempore veniam, magnam harum illo repellendus ullam?
             </p>
+            <SortProducts />
         </div>
     );
 };

@@ -20,14 +20,18 @@ export default function RootLayout({ children }) {
                             <CustomLink path="/">Home</CustomLink>
                         </li>
                         <li>
-                            <CustomLink path="/dasboard/settings">
+                            <CustomLink prefetch={false} path="/settings">
                                 setting
                             </CustomLink>
                         </li>
                         <li>
-                            <CustomLink path="/dasboard/analytics">
-                                analytics
-                            </CustomLink>
+                            <CustomLink path="/analytics">analytics</CustomLink>
+                        </li>
+                        <li>
+                            <CustomLink path="/heavy">Heavy</CustomLink>
+                        </li>
+                        <li>
+                            <CustomLink path="/blogs">Blogs</CustomLink>
                         </li>
                     </ul>
                 </nav>
